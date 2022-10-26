@@ -8,7 +8,7 @@ param publicIPAllocationMethod string = 'Dynamic'
 param publicIpSku string = 'Basic'
 param OSVersion string = '2019-datacenter-gensecond'
 param vmSize string = 'Standard_D2s_v5'
-param location string = resourceGroup().location
+param location string = 'eastus'
 param vmName string = 'simple-vm'
 
 var storageAccountName = 'bootdiags${uniqueString(resourceGroup().id)}'
